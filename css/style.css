@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+}
+.button{
+    color: blueviolet;
+}
+img{
+    float: right;
+    border-radius: 20px;
+
+}
+button{
+    transform: translatex(300%);
+    height: 70px;
+    width: 300px;
+    font-size: 30px;
+    border-radius: 20px;    
+    text-decoration: none;
+    
+    border-color: blue;
+    background-color: aqua;
+    
+}
+button:hover{
+    background-color: white;
+    transition: all 0.3s;
+}
+section{
+    height: 700px;
+    width: 1000px;
+    background-color: antiquewhite;
+}
+.flex-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    border: solid 1px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.flex-elements{
+    height: 50px;
+    width: 50px;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    background-color: black;
+    height: 40px;
+    justify-content: space-around;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+footer{
+    height: 30px;
+    color:white;
+    text-align: center;
+    background-color: black;
+}
+aside{
+    float: left;
+    min-height: calc(100vh-100px);
+    background-color: blueviolet;
+    height: auto;
+}
+section h1 ~ p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.flex-container .flex-elements:nth-child(1){
+    background-color: red;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    /* transform: translate(500px, 500px) skew(20deg, 10deg) scale(1.5); */
+    animation-name: change-location;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes change-location{
+    0%{
+        left: 0px;
+        top:0px
+    }
+    25%{
+        background-color: red;
+        left: 200px;
+        top:0px;
+    }
+    50%{
+        background-color: blue;
+        left:200px;
+        top:200px;
+    }
+    75%{
+        background-color: pink;
+        left:0px;
+        top:200px;
+    }
+    100%{
+        background-color: green;
+        left: 0px;
+        top: 0px;
+    }
+}
